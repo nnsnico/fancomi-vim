@@ -133,10 +133,10 @@ call s:HL('LineNr',       s:p.bg3,    s:p.none)
 call s:HL('CursorLineNr', s:p.orange, s:p.bg1)
 
 call s:HL('Directory',  s:p.blue,     s:p.none)
-call s:HL('DiffAdd',    s:p.none,     s:p.diff_green) " FIXME: not yet
-call s:HL('DiffChange', s:p.none,     s:p.diff_blue) " FIXME: not yet
-call s:HL('DiffDelete', s:p.none,     s:p.diff_red) " FIXME: not yet
-call s:HL('DiffText',   s:p.none,     s:p.none, 'reverse') " FIXME: not yet
+call s:HL('DiffAdd',    s:p.none,     s:p.diff_green)
+call s:HL('DiffChange', s:p.none,     s:p.diff_blue)
+call s:HL('DiffDelete', s:p.none,     s:p.diff_red)
+call s:HL('DiffText',   s:p.none,     s:p.none, 'reverse')
 call s:HL('ErrorMsg',   s:p.red,      s:p.none, 'bold,underline')
 call s:HL('WarningMsg', s:p.orange,   s:p.none, 'bold')
 call s:HL('ModeMsg',    s:p.fg,       s:p.none, 'bold')
