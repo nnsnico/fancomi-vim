@@ -80,7 +80,7 @@ endif
 if s:has_termguicolors
     let s:p = map(s:palette,  's:palette[v:key]["gui"]')
 
-    function! s:HL(group, fg, bg, ...)
+    function! s:HL(group, fg, bg, ...) abort
         let hl_str = 'highlight ' . a:group . ' guifg=' . a:fg . ' guibg=' . a:bg
         if a:0 == 2
             let hl_str = hl_str . ' gui=' . a:1 . ' cterm=' . a:1 . ' guisp=' . a:2
@@ -94,7 +94,7 @@ if s:has_termguicolors
 else
     let s:p = map(s:palette, 's:palette[v:key]["cterm"]')
 
-    function! s:HL(group, fg, bg, ...)
+    function! s:HL(group, fg, bg, ...) abort
         let hl_str = 'highlight ' . a:group . ' ctermfg=' . a:fg . ' ctermbg=' . a:bg
         if a:0 == 1
             if a:1 ==# 'undercurl'
@@ -409,8 +409,7 @@ let g:VM_Insert_hl = 'Cursor'
 if s:has_termguicolors
     let g:indentLine_color_gui = s:p.grey
 else
-    " TODO: Support ascii color
-    " let g:indentLine_color_term = s:palette.grey
+    let g:indentLine_color_term = s:p.grey
 endif
 
 " vim: set ts=4 sts=4 sw=4 et :

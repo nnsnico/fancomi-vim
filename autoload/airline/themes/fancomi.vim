@@ -1,6 +1,5 @@
 let g:airline#themes#fancomi#palette = {}
 
-" TODO: Support ascii color
 if &background ==# 'dark'
   let s:foreground      = { 'gui': '#EBE6D8', 'cterm': 187 }
   let s:background      = { 'gui': '#000A19', 'cterm': 232 }
@@ -23,11 +22,11 @@ elseif &background ==# 'light'
   let s:sky_blue        = { 'gui': '#3B9AC4', 'cterm': 31 }
 endif
 
-function! s:generate_airline_palette(mode)
+function! s:generate_airline_palette(mode) abort
   return [ a:mode[0].gui, a:mode[1].gui, a:mode[0].cterm, a:mode[1].cterm ]
 endfunction
 
-function! s:generate_airline_theme(mode)
+function! s:generate_airline_theme(mode) abort
   let airline_palette = s:generate_airline_palette(a:mode)
   return airline#themes#generate_color_map(airline_palette, s:info, s:statusline)
 endfunction
