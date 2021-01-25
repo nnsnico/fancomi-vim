@@ -18,14 +18,14 @@ colorscheme where inspired the logo of [fancommunications, inc](https://www.fanc
 vimscript
 
 ```vim
-call dein#add('git@github.com:nnsnico/fancomi-vim.git')
+call dein#add('git@github.com:fan-ADN/fancomi-vim.git')
 ```
 
 toml
 
 ```toml
 [[plugins]]
-repo = 'git@github.com:nnsnico/fancomi-vim.git'
+repo = 'git@github.com:fan-ADN/fancomi-vim.git'
 ```
 
 #### 2. set colorscheme
