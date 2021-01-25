@@ -18,21 +18,29 @@ colorscheme where inspired the logo of [fancommunications, inc](https://www.fanc
 vimscript
 
 ```vim
-call dein#add('nnsnico/fancomi-vim-private')
+call dein#add('git@github.com:nnsnico/fancomi-vim.git')
 ```
 
 toml
 
 ```toml
 [[plugins]]
-repo = 'nnsnico/fancomi-vim-private'
+repo = 'git@github.com:nnsnico/fancomi-vim.git'
 ```
 
 #### 2. set colorscheme
 
 ```vim
+set termguicolors
+
 set background=dark " able to select dark or light
 colorscheme fancomi
+```
+
+##### Airline
+
+```vim
+let g:airline_theme = "fancomi"
 ```
 
 ### Support languages
