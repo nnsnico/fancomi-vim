@@ -1,6 +1,6 @@
 ## fancomi-vim
 
-colorscheme where inspired the logo of [fancommunications, inc](https://www.fancs.com/).
+colorscheme that inspired the logo of [fancommunications, inc](https://www.fancs.com/).
 
 - blue color base
 - true color support
